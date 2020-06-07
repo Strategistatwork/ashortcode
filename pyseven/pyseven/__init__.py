@@ -20,7 +20,23 @@ vowels=['a','e','i','o','u']
 word=input('Enter a word to search for vowels')
 found=[]
 for letter in word:
+    
     if letter in vowels:
         if letter not in found:
             found.append(letter)
-print(found)        
+print(found) 
+sentence="Six little kitten kept mewing all the time"     
+psce=list(sentence)
+for twitter in psce[:3]:
+    print(twitter)
+    print()
+for twitter in psce[-1:-5:-1]:
+    print('\t'*2,twitter)
+    print() 
+for twitter in psce[::-1]:
+    print('\t'*3,twitter)
+    print()
+psce.remove("m")    
+newsentence=''.join(psce)
+print(newsentence)
+           
